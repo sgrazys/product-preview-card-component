@@ -34,4 +34,44 @@ body {
 	font-size: 1.4rem;
 	color: var(--color-gray);
 	background-color: var(--color-secondary);
+	padding: 2.8em 1.6em;
+}
+
+.card {
+	background-color: var(--color-white);
+	border-radius: 1em;
+	overflow: hidden;
+
+	&__header {
+		height: calc(100vw - 13.5rem);
+
+		.img {
+			width: 100%;
+			height: 100%;
+			background-image: url(./images/image-product-mobile.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.content {
+		padding: 1.714em;
+
+		&__category {
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			letter-spacing: 0.3em;
+			margin-bottom: 1em;
+		}
+		&__heading {
+			font-family: var(--font-header);
+			font-size: 3.2rem;
+			line-height: 1;
+			color: var(--color-gray-dark);
+			margin-bottom: 0.7em;
+		}
+		&__description {
+		}
+	}
 }
